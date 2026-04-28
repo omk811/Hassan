@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التسجيل المبدئي — حسن موسى حسن البلوشي — دليل 2026/2027</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1a3352;--gold:#c8932a;--gold-lt:#f5e9ce;
+  --bg:#f5f2ec;--card:#fff;--border:#ddd5c0;
+  --text:#1a2636;--muted:#6b7585;
+  --g1:#1b6b42;--g2:#1a4b8a;--g3:#6b3a00;--g4:#4a2080;--g5:#5a1a1a;
+}
+body{font-family:'Cairo','Tajawal',sans-serif;background:var(--bg);color:var(--text)}
+
+.hdr{background:linear-gradient(135deg,#1a3352 0%,#2a5070 55%,#1a4060 100%);padding:28px 36px 22px;position:relative;overflow:hidden}
+.hdr::before{content:'';position:absolute;top:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(200,147,42,.15) 0%,transparent 70%);border-radius:50%}
+.hi{position:relative;z-index:1;max-width:1160px;margin:0 auto}
+.htop{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hbadge{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--gold);background:rgba(200,147,42,.15);border:1px solid rgba(200,147,42,.3);padding:4px 12px;border-radius:20px;white-space:nowrap;align-self:flex-start}
+.htitle{font-size:22px;font-weight:800;color:#fff;margin:10px 0 4px}
+.hsub{font-size:12px;color:rgba(255,255,255,.6);margin-bottom:18px}
+.hcards{display:flex;gap:10px;flex-wrap:wrap}
+.hcard{background:rgba(255,255,255,.08);border:1px solid rgba(200,147,42,.25);border-radius:10px;padding:9px 15px;min-width:110px}
+.hcard .lbl{font-size:10px;color:rgba(255,255,255,.5);margin-bottom:2px}
+.hcard .val{font-size:13px;font-weight:700;color:#fff}
+.avg{background:var(--gold);color:var(--navy);font-size:13px;font-weight:800;padding:9px 16px;border-radius:10px;align-self:center;text-align:center;line-height:1.4}
+
+.grades-bar{background:var(--gold-lt);border-bottom:2px solid var(--gold);padding:12px 36px}
+.grades-inner{max-width:1160px;margin:0 auto}
+.grades-title{font-size:11px;font-weight:700;color:#6b4500;margin-bottom:8px}
+.grades-row{display:flex;gap:8px;flex-wrap:wrap}
+.gchip{background:#fff;border:1px solid rgba(200,147,42,.35);border-radius:8px;padding:5px 12px;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.gchip .gn{color:var(--muted);font-size:10px}
+.gchip .gv{font-weight:700;color:var(--navy);font-size:13px}
+
+.info-bar{background:var(--navy);padding:8px 36px}
+.info-inner{max-width:1160px;margin:0 auto;display:flex;gap:18px;flex-wrap:wrap;font-size:11px;color:rgba(255,255,255,.65)}
+.ii{display:flex;align-items:center;gap:5px}
+.idot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+.controls{max-width:1160px;margin:0 auto;padding:14px 36px 10px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.cl{font-size:11.5px;color:var(--muted);font-weight:600}
+.fb{font-family:'Cairo',sans-serif;font-size:11.5px;padding:5px 14px;border-radius:20px;border:1.5px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;transition:all .15s;font-weight:500}
+.fb:hover{border-color:var(--navy);color:var(--navy)}
+.fb.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.clbl{margin-right:auto;font-size:11px;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:4px 14px}
+
+.wrap{max-width:1160px;margin:0 auto 14px;padding:0 36px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07),0 0 0 1px var(--border);font-size:12.5px}
+thead tr{background:var(--navy)}
+thead th{padding:10px 12px;text-align:right;font-size:11px;font-weight:600;color:rgba(255,255,255,.75);white-space:nowrap;letter-spacing:.3px}
+thead th:first-child{text-align:center;width:36px;color:var(--gold)}
+tbody tr{border-bottom:1px solid var(--border);transition:background .1s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:#fafaf5}
+tbody td{padding:9px 12px;vertical-align:middle}
+tbody td:first-child{text-align:center}
+
+.rk{display:inline-flex;align-items:center;justify-content:center;width:23px;height:23px;border-radius:50%;font-size:10.5px;font-weight:700}
+.r1{background:#f0d060;color:#5a3800}.r2{background:#d0d0d0;color:#333}.r3{background:#e8a878;color:#5a2000}.ro{background:#eaecf0;color:#667}
+
+.cat{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-bottom:3px}
+.ct{background:#e8f5ee;color:#1b5e3a}
+.ci{background:#e8f0fa;color:#1a3d6b}
+.ch{background:#f5f0e0;color:#5a3800}
+.cn{background:#f0eafa;color:#4a2080}
+
+.spn{font-weight:600;font-size:12.5px;line-height:1.35}
+.spc{display:inline-block;margin-top:3px;font-size:10px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--navy);color:#fff;letter-spacing:.5px;direction:ltr}
+.tag{display:inline-block;font-size:10px;padding:2px 6px;border-radius:8px;background:#eaecf0;color:#445;margin:1px}
+
+.bw{display:flex;align-items:center;gap:8px}
+.sv{font-weight:700;font-size:13px;min-width:44px}
+.bbg{flex:1;height:6px;background:#e2e6ea;border-radius:3px;min-width:50px;overflow:hidden}
+.bf{height:6px;border-radius:3px}
+.s83{color:var(--g1)}.b83{background:var(--g1)}
+.s79{color:var(--g2)}.b79{background:var(--g2)}
+.s76{color:var(--g3)}.b76{background:var(--g3)}
+.s72{color:var(--g4)}.b72{background:var(--g4)}
+.slo{color:var(--muted)}.blo{background:var(--muted)}
+
+.inn{font-size:12px;font-weight:600}
+.lc{font-size:10.5px;padding:2px 8px;border-radius:6px;background:var(--gold-lt);color:#6b4500;border:1px solid rgba(200,147,42,.3);display:inline-block;margin-top:2px}
+
+.footer{max-width:1160px;margin:0 auto 32px;padding:0 36px}
+.note{background:#e8f0fa;border-right:3px solid var(--navy);border-radius:8px;padding:12px 16px;font-size:11.5px;color:var(--navy);line-height:1.8}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}
+.li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.ld{width:10px;height:10px;border-radius:50%}
+.gnn{text-align:center;font-size:10.5px;color:var(--muted);margin-top:12px}
+
+@media(max-width:768px){
+  .hdr,.grades-bar,.info-bar,.controls,.wrap,.footer{padding-right:14px;padding-left:14px}
+  .htitle{font-size:17px}
+  table{font-size:11px}
+  thead th,tbody td{padding:7px 8px}
+}
+@media print{
+  .hdr,thead tr{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .controls{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hi">
+    <div class="htop">
+      <div>
+        <div class="hbadge">القبول الموحد · دليل الطالب 2026 / 2027</div>
+        <div class="htitle">التسجيل المبدئي — البرامج المقترحة</div>
+        <div class="hsub">40 برنامجاً · جميع الجامعات · للذكور · بدون مناطق الامتياز · مرتبة تنازلياً · المعادلة: (كل المواد ×40%) + (مواد التخصص ×60%)</div>
+      </div>
+      <div class="avg">المتوسط العام<br>75.75%</div>
+    </div>
+    <div class="hcards">
+      <div class="hcard"><div class="lbl">الاسم</div><div class="val">حسن موسى حسن البلوشي</div></div>
+      <div class="hcard"><div class="lbl">رقم الجلوس</div><div class="val">22622</div></div>
+      <div class="hcard"><div class="lbl">الفصل الدراسي</div><div class="val">الأول 2025/2026</div></div>
+      <div class="hcard"><div class="lbl">عدد البرامج</div><div class="val">40 برنامجاً</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grades-bar">
+  <div class="grades-inner">
+    <div class="grades-title">📊 درجات الفصل الأول 2025/2026</div>
+    <div class="grades-row">
+      <div class="gchip"><div class="gn">التربية الإسلامية</div><div class="gv">89</div></div>
+      <div class="gchip"><div class="gn">اللغة العربية</div><div class="gv">66</div></div>
+      <div class="gchip"><div class="gn">اللغة الإنجليزية</div><div class="gv">54</div></div>
+      <div class="gchip"><div class="gn">الرياضة المدرسية</div><div class="gv">83</div></div>
+      <div class="gchip"><div class="gn">الدراسات الاجتماعية</div><div class="gv">92</div></div>
+      <div class="gchip"><div class="gn">الجغرافيا والتقنيات</div><div class="gv">77</div></div>
+      <div class="gchip"><div class="gn">العلوم البيئية</div><div class="gv">70</div></div>
+      <div class="gchip"><div class="gn">الرياضيات الأساسية</div><div class="gv">75</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="info-bar">
+  <div class="info-inner">
+    <div class="ii"><div class="idot"></div>برامج الذكور فقط — تم استبعاد تخصصات الإناث</div>
+    <div class="ii"><div class="idot"></div>تم استبعاد برامج مناطق الامتياز / توطين القرى البعيدة</div>
+    <div class="ii"><div class="idot"></div>جميع الجامعات الداخلية بلا استثناء جغرافي</div>
+    <div class="ii"><div class="idot"></div>البعثات الخارجية مستبعدة</div>
+  </div>
+</div>
+
+<div class="controls">
+  <span class="cl">تصفية:</span>
+  <button class="fb on" onclick="fc('all',this)">الكل</button>
+  <button class="fb" onclick="fc('تربية',this)">التربية والإنسانيات</button>
+  <button class="fb" onclick="fc('إدارة',this)">الإدارة والأعمال</button>
+  <button class="fb" onclick="fc('حقوق',this)">الحقوق والقانون</button>
+  <button class="fb" onclick="fc('هندسة',this)">الهندسة والتقنية</button>
+  <span class="clbl" id="clbl">عدد البرامج: —</span>
+</div>
+
+<div class="wrap">
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>التخصص والرمز</th>
+      <th>المواد المحتسبة</th>
+      <th>متوسط التخصص</th>
+      <th>المعدل التنافسي</th>
+      <th>المؤسسة التعليمية</th>
+      <th>الولاية — المحافظة</th>
+    </tr>
+  </thead>
+  <tbody id="tb"></tbody>
+</table>
+</div>
+
+<div class="footer">
+  <div class="note">
+    <strong>⚠️ تنبيهات مهمة قبل التسجيل:</strong><br>
+    • برامج التربية الرياضية والفنية تشترط <strong>اختبار القدرات والمقابلة الشخصية والفحص الطبي</strong> — تحقق من الشروط الكاملة في الدليل.<br>
+    • <strong>الرياضيات الأساسية (75)</strong> تمنع الالتحاق ببعض تخصصات الهندسة التي تشترط الرياضيات المتقدمة.<br>
+    • <strong>اللغة الإنجليزية (54)</strong> قد تكون عائقاً لبعض البرامج التي تشترط 60% فأعلى — تحقق من شرط كل برنامج.<br>
+    • الأرقام مبنية على <strong>نتائج الفصل الأول فقط</strong> وستتحسن بعد الفصل الثاني.<br>
+    • سجّل أكبر عدد ممكن من الرغبات بهذا الترتيب لضمان القبول في الفرز الأول.
+  </div>
+  <div class="legend">
+    <div class="li"><div class="ld" style="background:var(--g1)"></div>83% فأعلى</div>
+    <div class="li"><div class="ld" style="background:var(--g2)"></div>79% — 82.99%</div>
+    <div class="li"><div class="ld" style="background:var(--g3)"></div>76% — 78.99%</div>
+    <div class="li"><div class="ld" style="background:var(--g4)"></div>72% — 75.99%</div>
+    <div class="li"><div class="ld" style="background:var(--muted)"></div>أقل من 72%</div>
+  </div>
+  <div class="gnn">مُعدّ وفق دليل الطالب للقبول الموحد للعام الأكاديمي 2026/2027 · وزارة التعليم العالي والبحث العلمي والابتكار · سلطنة عُمان</div>
+</div>
+
+<script>
+const D=[
+  {cat:"تربية",code:"BS970",name:"التربية الرياضية (للذكور فقط)",sub:["رياضة","دراسات","إسلامية"],ap:88.00,sc:83.10,inst:"جامعة صحار",loc:"صحار — الباطنة الشمالية"},
+  {cat:"تربية",code:"BS970",name:"التربية الرياضية — فرع نزوى (للذكور)",sub:["رياضة","دراسات","إسلامية"],ap:88.00,sc:83.10,inst:"جامعة نزوى",loc:"نزوى — الداخلية"},
+  {cat:"تربية",code:"BS286",name:"الفنون التشكيلية — تصميم الحلي والمجوهرات",sub:["رياضة","دراسات","إسلامية"],ap:88.00,sc:83.10,inst:"جامعة نزوى",loc:"نزوى — الداخلية"},
+  {cat:"تربية",code:"BS282",name:"التربية الفنية — الفنون التشكيلية",sub:["رياضة","دراسات"],ap:87.50,sc:82.80,inst:"جامعة نزوى",loc:"نزوى — الداخلية"},
+  {cat:"تربية",code:"SQ708",name:"الآداب والعلوم الاجتماعية — التاريخ",sub:["دراسات","إسلامية","عربية"],ap:82.33,sc:79.70,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ963",name:"الآداب — التاريخ",sub:["دراسات","إسلامية","عربية"],ap:82.33,sc:79.70,inst:"جامعة السلطان قابوس",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ964",name:"الآداب — علم الاجتماع",sub:["دراسات","إسلامية","عربية"],ap:82.33,sc:79.70,inst:"جامعة السلطان قابوس",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"BS196",name:"الصحافة والإعلام والعلاقات العامة",sub:["دراسات","إسلامية","عربية"],ap:82.33,sc:79.70,inst:"كلية البيان",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ967",name:"الآداب — دراسات المعلومات والجغرافيا",sub:["جغرافيا","دراسات","بيئية"],ap:79.67,sc:78.10,inst:"جامعة السلطان قابوس",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ704",name:"الآداب — الجغرافيا",sub:["جغرافيا","دراسات","عربية"],ap:78.33,sc:77.30,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ965",name:"الآداب — الإعلام",sub:["جغرافيا","دراسات","عربية"],ap:78.33,sc:77.30,inst:"جامعة السلطان قابوس",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ966",name:"الآداب — السياحة",sub:["جغرافيا","دراسات","عربية"],ap:78.33,sc:77.30,inst:"جامعة السلطان قابوس",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ707",name:"الآداب — اللغة العربية وآدابها",sub:["إسلامية","عربية"],ap:77.50,sc:76.80,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"إدارة",code:"BS095",name:"اللوجستيات وسلاسل التوريد",sub:["رياضيات","دراسات","إنجليزية"],ap:73.67,sc:74.50,inst:"جامعة الشرقية",loc:"إبراء — الشرقية الشمالية"},
+  {cat:"إدارة",code:"BS072",name:"الاقتصاد والأعمال",sub:["رياضيات","دراسات","إنجليزية"],ap:73.67,sc:74.50,inst:"كلية البريمي الجامعية",loc:"البريمي — محافظة البريمي"},
+  {cat:"إدارة",code:"SQ255",name:"الاقتصاد والعلوم السياسية",sub:["رياضيات","دراسات","إنجليزية"],ap:73.67,sc:74.50,inst:"جامعة السلطان قابوس — كلية الاقتصاد",loc:"مسقط — محافظة مسقط"},
+  {cat:"إدارة",code:"SQ703",name:"الآداب — الدراسات والمعلومات",sub:["رياضيات","دراسات","إنجليزية"],ap:73.67,sc:74.50,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"إدارة",code:"BS290",name:"اللوجستيات والتوريد وإدارة المشاريع",sub:["رياضيات","دراسات","إنجليزية"],ap:73.67,sc:74.50,inst:"جامعة مسقط",loc:"مسقط — محافظة مسقط"},
+  {cat:"إدارة",code:"BS955",name:"إدارة الفنادق والسياحة",sub:["رياضيات","دراسات","إنجليزية"],ap:73.67,sc:74.50,inst:"كلية الشرق الأوسط",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ700",name:"الآداب — السياحة",sub:["دراسات","عربية","إنجليزية"],ap:70.67,sc:72.70,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ701",name:"الآداب — السياحة والضيافة",sub:["دراسات","عربية","إنجليزية"],ap:70.67,sc:72.70,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ702",name:"الآداب — الإعلام",sub:["دراسات","عربية","إنجليزية"],ap:70.67,sc:72.70,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ705",name:"الآداب — اللغة الإنجليزية",sub:["إنجليزية","إسلامية","عربية"],ap:69.67,sc:72.10,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"تربية",code:"SQ706",name:"الآداب — الترجمة",sub:["إنجليزية","إسلامية","عربية"],ap:69.67,sc:72.10,inst:"جامعة السلطان قابوس — كلية الآداب",loc:"مسقط — محافظة مسقط"},
+  {cat:"حقوق",code:"SQ800",name:"كلية الحقوق — بكالوريوس القانون",sub:["إسلامية","عربية","إنجليزية"],ap:69.67,sc:72.10,inst:"جامعة السلطان قابوس — كلية الحقوق",loc:"مسقط — محافظة مسقط"},
+  {cat:"هندسة",code:"BS287",name:"تصميم الويب وأمن المعلومات",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"جامعة نزوى",loc:"نزوى — الداخلية"},
+  {cat:"هندسة",code:"BS915",name:"علوم الحاسوب",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"جامعة نزوى",loc:"نزوى — الداخلية"},
+  {cat:"هندسة",code:"SQ301",name:"التربية — الرياضيات",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"جامعة السلطان قابوس — كلية التربية",loc:"مسقط — محافظة مسقط"},
+  {cat:"إدارة",code:"BS149",name:"إدارة الأعمال",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"جامعة مسقط",loc:"مسقط — محافظة مسقط"},
+  {cat:"هندسة",code:"BS268",name:"علوم الحاسوب والذكاء الاصطناعي",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"الكلية العالمية للهندسة والتكنولوجيا",loc:"مسقط — محافظة مسقط"},
+  {cat:"هندسة",code:"BS052",name:"الحوسبة السحابية وتقنية المعلومات للأعمال",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"الجامعة الوطنية للعلوم والتكنولوجيا",loc:"مسقط — محافظة مسقط"},
+  {cat:"هندسة",code:"BS187",name:"علوم البيانات والأمن السيبراني",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"كلية مجان الجامعية",loc:"مسقط — محافظة مسقط"},
+  {cat:"هندسة",code:"U0302",name:"تقنية المعلومات — فرع إبراء",sub:["رياضيات","إنجليزية"],ap:64.50,sc:69.00,inst:"جامعة التقنية والعلوم التطبيقية",loc:"إبراء — الشرقية الشمالية"},
+  {cat:"حقوق",code:"BS219",name:"القانون",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"جامعة الشرقية",loc:"إبراء — الشرقية الشمالية"},
+  {cat:"حقوق",code:"BS231",name:"القانون",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"جامعة البريمي",loc:"البريمي — محافظة البريمي"},
+  {cat:"حقوق",code:"BS073",name:"القانون",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"كلية البريمي الجامعية",loc:"البريمي — محافظة البريمي"},
+  {cat:"تربية",code:"BS074",name:"اللغة الإنجليزية وآدابها",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"كلية البريمي الجامعية",loc:"البريمي — محافظة البريمي"},
+  {cat:"تربية",code:"BS075",name:"الترجمة",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"كلية البريمي الجامعية",loc:"البريمي — محافظة البريمي"},
+  {cat:"حقوق",code:"BS077",name:"القانون",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"الجامعة العربية المفتوحة",loc:"مسقط — محافظة مسقط"},
+  {cat:"حقوق",code:"BS092",name:"القانون التجاري",sub:["عربية","إنجليزية"],ap:60.00,sc:66.30,inst:"الكلية الحديثة للتجارة والعلوم",loc:"مسقط — محافظة مسقط"},
+];
+
+const MAX=90;
+function sc2(s){return s>=83?"s83":s>=79?"s79":s>=76?"s76":s>=72?"s72":"slo"}
+function bc2(s){return s>=83?"b83":s>=79?"b79":s>=76?"b76":s>=72?"b72":"blo"}
+function cc(c){return c==="تربية"?"ct":c==="إدارة"?"ci":c==="حقوق"?"ch":"cn"}
+function rk(i){const c=i===1?"r1":i===2?"r2":i===3?"r3":"ro";return`<span class="rk ${c}">${i}</span>`}
+
+function render(rows){
+  const tb=document.getElementById("tb");
+  tb.innerHTML="";
+  rows.forEach((d,i)=>{
+    const pct=Math.min(100,((d.sc/MAX)*100)).toFixed(1);
+    const tags=d.sub.map(s=>`<span class="tag">${s}</span>`).join("");
+    const tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td>${rk(i+1)}</td>
+      <td>
+        <div><span class="cat ${cc(d.cat)}">${d.cat}</span></div>
+        <div class="spn">${d.name}</div>
+        <span class="spc">${d.code}</span>
+      </td>
+      <td>${tags}</td>
+      <td style="font-size:12px;font-weight:600;white-space:nowrap">${d.ap.toFixed(2)}%</td>
+      <td>
+        <div class="bw">
+          <span class="sv ${sc2(d.sc)}">${d.sc}%</span>
+          <div class="bbg"><div class="bf ${bc2(d.sc)}" style="width:${pct}%"></div></div>
+        </div>
+      </td>
+      <td><div class="inn">${d.inst}</div></td>
+      <td><span class="lc">📍 ${d.loc}</span></td>`;
+    tb.appendChild(tr);
+  });
+  document.getElementById("clbl").textContent=`عدد البرامج: ${rows.length}`;
+}
+
+function fc(cat,btn){
+  document.querySelectorAll(".fb").forEach(b=>b.classList.remove("on"));
+  btn.classList.add("on");
+  render(cat==="all"?D:D.filter(d=>d.cat===cat));
+}
+
+render(D);
+</script>
+</body>
+</html>
